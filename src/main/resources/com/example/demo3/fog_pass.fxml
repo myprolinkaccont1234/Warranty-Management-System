@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="601.0" style="-fx-background-color: #ebebeb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Fog_pass">
+   <children>
+      <Polyline fill="#06ae00" layoutX="428.0" layoutY="181.0" opacity="0.16" points="38.0, -127.0, 74.0, -55.0, 32.0, -114.0, -236.0, 27.0" rotate="180.0" stroke="#06ae00" strokeType="INSIDE" />
+      <Polyline fill="#06ae00" layoutX="334.0" layoutY="158.0" opacity="0.16" points="38.0, -127.0, 74.0, -55.0, 32.0, -114.0, -236.0, 27.0" stroke="#06ae00" strokeType="INSIDE" />
+      <Label layoutX="91.0" layoutY="44.0" text="User Name" textFill="#06ae00">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button layoutX="151.0" layoutY="201.0" mnemonicParsing="false" onAction="#fog_update" prefHeight="30.0" prefWidth="89.0" style="-fx-background-radius: 15; -fx-background-color: green;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="292.0" layoutY="201.0" mnemonicParsing="false" onAction="#fog_clear" prefHeight="30.0" prefWidth="89.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="Clear" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="70.0" layoutY="91.0" text="New Password" textFill="#06ae00">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="141.0" text="Repeat Password" textAlignment="CENTER" textFill="#06ae00">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <PasswordField fx:id="fog_np" accessibleText="Minimum 8 Characters" layoutX="171.0" layoutY="89.0" prefHeight="26.0" prefWidth="196.0" promptText="Password" style="-fx-border-color: green; -fx-background-radius: false;" />
+      <PasswordField fx:id="fog_rp" layoutX="171.0" layoutY="138.0" prefHeight="26.0" prefWidth="196.0" promptText="Password" style="-fx-border-color: #06ae00;" />
+      <Pane layoutX="374.0" layoutY="94.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #06ae00;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane accessibleText="Show" layoutX="374.0" layoutY="144.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #06ae00;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Label fx:id="fog_enp" layoutX="406.0" layoutY="94.0" textFill="RED" />
+      <Label fx:id="fog_erp" layoutX="406.0" layoutY="143.0" textFill="RED" />
+      <TextField fx:id="fog_user" layoutX="171.0" layoutY="42.0" prefHeight="25.0" prefWidth="196.0" promptText="e.g.Perera" style="-fx-border-color: green; -fx-background-radius: none;" />
+   </children>
+</Pane>

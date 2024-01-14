@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Userm">
+   <children>
+      <Polyline fill="RED" layoutX="217.0" layoutY="397.0" opacity="0.22" points="-121.0, 77.0, 615.0, 89.0, -156.0, 89.0, 403.0, -360.0" stroke="RED" strokeType="INSIDE" />
+      <Polyline fill="RED" layoutX="448.0" layoutY="67.0" opacity="0.22" points="-406.0, -54.0, 125.0, -54.0, -160.0, 172.0, 98.0, -41.0" stroke="RED" strokeType="INSIDE" />
+      <Label layoutX="191.0" layoutY="103.0" text="New Licence Key" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lic_text" layoutX="307.0" layoutY="98.0" prefHeight="27.0" prefWidth="355.0" promptText="Licence Key" style="-fx-border-radius: none; -fx-background-radius: none; -fx-border-color: red;" />
+      <Button layoutX="539.0" layoutY="160.0" mnemonicParsing="false" onAction="#add_lic" prefHeight="32.0" prefWidth="123.0" style="-fx-background-color: red; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Add licence" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Pane layoutX="1063.0" prefHeight="500.0" prefWidth="139.0" style="-fx-background-color: red;" />
+      <Label fx:id="erl" layoutX="678.0" layoutY="101.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

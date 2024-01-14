@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Cal">
+   <Text fill="#00970d" layoutX="754.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023-Open project">
+      <font>
+         <Font name="System Bold Italic" size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#0eab00" layoutX="753.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Copyright Disable">
+      <font>
+         <Font name="System Italic" size="14.0" />
+      </font>
+   </Text>
+   <Pane focusTraversable="true" layoutX="951.0" layoutY="13.0" prefHeight="487.0" prefWidth="250.0" style="-fx-background-color: green;" />
+   <Text fill="#059a07" layoutX="805.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank You...">
+      <font>
+         <Font name="System Italic" size="13.0" />
+      </font>
+   </Text>
+   <Polyline fill="#1aff00" layoutX="844.0" layoutY="112.0" points="-11.0, -44.0, 25.0, 59.892578125, 25.0, 19.0, -33.0, -34.0" strokeLineCap="ROUND" strokeType="INSIDE" />
+   <Polyline fill="RED" layoutX="844.0" layoutY="115.0" points="18.0, -47.0, 31.0, -31.0, -41.0, 36.0, -5.0, 21.0" strokeType="INSIDE" />
+   <Polyline fill="CHARTREUSE" layoutX="494.0" layoutY="192.0" opacity="0.22" points="-409.0, 182.0, 187.0, -143.0, 275.0, 31.0, 177.0, -122.0" stroke="#06b22b" strokeType="INSIDE" style="-fx-fill: green;" />
+   <Polyline fill="CHARTREUSE" layoutX="684.0" layoutY="274.0" opacity="0.22" points="-409.0, 182.0, 187.0, -143.0, 275.0, 31.0, 177.0, -122.0" rotate="180.0" stroke="#06b22b" strokeType="INSIDE" style="-fx-fill: green;" />
+</AnchorPane>

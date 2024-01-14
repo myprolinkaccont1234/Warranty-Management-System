@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Polyline fill="RED" layoutX="255.0" layoutY="90.0" points="-192.0, -70.0, 389.0, -70.0, 184.0, 152.0, 364.0, -54.0" stroke="RED" strokeType="INSIDE" />
+      <Polyline fill="#279007" layoutX="191.0" layoutY="370.0" points="190.0, -158.0, -60.0, 108.0, 596.0, 122.0, -91.0, 122.0" stroke="#29900a" strokeType="INSIDE" />
+      <Label layoutX="89.0" layoutY="283.0" prefHeight="20.0" prefWidth="160.0" text="Customer Phone Number" textFill="#09ae00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phone" layoutX="256.0" layoutY="279.0" prefHeight="25.0" prefWidth="212.0" promptText="07XXXXXXXX" style="-fx-background-radius: none; -fx-border-color: green;" />
+      <Button layoutX="255.0" layoutY="404.0" mnemonicParsing="false" onAction="#chk_bal" prefHeight="27.0" prefWidth="89.0" style="-fx-background-color: green; -fx-background-radius: 15px;" text="Check" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="tv_tab" layoutX="489.0" layoutY="273.0" prefHeight="206.0" prefWidth="648.0">
+        <columns>
+          <TableColumn fx:id="ca" prefWidth="155.0" text="Total Amount" />
+          <TableColumn fx:id="cb" prefWidth="206.0" text="Settle Dates" />
+            <TableColumn fx:id="cc" prefWidth="138.0" text="Settle Amounts" />
+            <TableColumn fx:id="cd" prefWidth="153.0" text=" Total Remain Amount" />
+        </columns>
+         <effect>
+            <DropShadow height="23.45" radius="10.3625" spread="0.57" width="20.0">
+               <color>
+                  <Color red="0.11052631586790085" green="0.8289473652839661" />
+               </color>
+               <input>
+                  <SepiaTone />
+               </input>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <Label layoutX="549.0" layoutY="198.0" prefHeight="17.0" prefWidth="98.0" text="Cutomer Name  :" textFill="#1c9700">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" onAction="#clear_n" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: green; -fx-background-radius: 15px;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="lb_e_phone" layoutX="291.0" layoutY="367.0" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="493.0" layoutY="231.0" text="Customer Phone Number  :" textFill="#1c9700">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_name" layoutX="660.0" layoutY="231.0" textFill="#039e01">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lb_phone" layoutX="658.0" layoutY="198.0" textFill="#13a400">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Pane layoutX="1152.0" prefHeight="500.0" prefWidth="48.0" style="-fx-background-color: green;" />
+      <TextField fx:id="C_name" layoutX="256.0" layoutY="342.0" prefHeight="27.0" prefWidth="212.0" promptText="Name" style="-fx-background-radius: none; -fx-border-radius: none; -fx-border-color: green;" />
+      <Label layoutX="116.0" layoutY="346.0" text="Customer Name " textFill="#199a0e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_e_cus" layoutX="290.0" layoutY="305.0" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="34.0" style="-fx-underline: true;" text="Payment Record" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phone1" layoutX="262.0" layoutY="72.0" prefHeight="25.0" prefWidth="212.0" promptText="07XXXXXXXX" style="-fx-background-radius: none; -fx-border-color: red;" />
+      <TextField fx:id="Amount" layoutX="262.0" layoutY="122.0" prefHeight="25.0" prefWidth="212.0" promptText="R.s.00.00" style="-fx-background-radius: none; -fx-border-color: red;" />
+      <Label layoutX="87.0" layoutY="72.0" prefHeight="27.0" prefWidth="201.0" text="Customer Phone Number" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="126.0" text="Credit Amount" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="262.0" layoutY="166.0" mnemonicParsing="false" onAction="#record" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: red; -fx-background-radius: 15px;" text="Record" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="387.0" layoutY="166.0" mnemonicParsing="false" onAction="#clear_pay" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: red; -fx-background-radius: 15px;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb_r_phone1" layoutX="480.0" layoutY="74.0" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_r_credit" layoutX="480.0" layoutY="126.0" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

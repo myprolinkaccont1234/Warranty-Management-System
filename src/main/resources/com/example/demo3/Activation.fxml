@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="195.0" maxWidth="600.0" minHeight="166.0" minWidth="468.0" prefHeight="166.0" prefWidth="468.0" style="-fx-background-color: white; -fx-border-radius: 10px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Activation">
+   <children>
+      <Polyline fill="#0bb909" layoutX="106.0" layoutY="119.0" opacity="0.22" points="222.0, -65.0, 196.0, -109.0, 5.0, 14.0, 196.0, -97.0" stroke="#0bb909" strokeType="INSIDE" />
+      <Polyline fill="#00c628" layoutX="137.0" layoutY="189.0" opacity="0.18" points="27.0, -85.0, 54.0, -43.0, 258.0, -163.0, 54.0, -32.0" stroke="#00b50c" strokeType="INSIDE" />
+      <Pane layoutX="-76.0" prefHeight="167.0" prefWidth="92.0" style="-fx-background-color: green; -fx-border-radius: 10px; -fx-background-radius: 20px;" />
+      <Label layoutX="31.0" layoutY="28.0" prefHeight="26.0" prefWidth="366.0" style="-fx-underline: true;" text="Activation  Code" textFill="#33ab03">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="337.0" layoutY="125.0" maxHeight="27.0" maxWidth="127.0" minHeight="27.0" minWidth="104.0" mnemonicParsing="false" onAction="#clear" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 15px;" text="Clear" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="198.0" layoutY="125.0" mnemonicParsing="false" onAction="#active" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 15px;" text="Active" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <TextField fx:id="key" layoutX="37.0" layoutY="69.0" prefHeight="20.0" prefWidth="404.0" promptText="Activation Key" style="-fx-background-radius: none; -fx-text-fill: green; -fx-border-color: green;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

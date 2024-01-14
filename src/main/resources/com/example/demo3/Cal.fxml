@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#Axiver" prefHeight="500.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Cal">
+   <top>
+       <MenuBar style="-fx-background-color: white; -fx-text-fill: white;" BorderPane.alignment="CENTER">
+           <Menu mnemonicParsing="false" text="File">
+               <MenuItem mnemonicParsing="false" text="Close" />
+           </Menu>
+           <Menu mnemonicParsing="false" text="Edit">
+               <MenuItem mnemonicParsing="false" text="Delete" />
+           </Menu>
+           <Menu mnemonicParsing="false" text="Help">
+               <MenuItem mnemonicParsing="false" text="About" />
+           </Menu>
+           <Menu fx:id="Active" mnemonicParsing="false" style="-fx-background-color: red;" text="Activation">
+               <MenuItem mnemonicParsing="false" onAction="#activekey" text="Activation" />
+           </Menu>
+         <Menu mnemonicParsing="false" text="Profile">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#profile_show" text="Profile" />
+            </items></Menu>
+           <Menu mnemonicParsing="false" text="Setting">
+               <MenuItem mnemonicParsing="false" text="Preferance" />
+           </Menu>
+       </MenuBar>
+   </top>
+   <left>
+       <VBox prefHeight="500.0" style="-fx-background-color: #038000;" BorderPane.alignment="CENTER">
+           <Button id="b1" mnemonicParsing="false" onMouseClicked="#buttoni" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: green;" text="Add Warranty" textFill="#038000">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+           <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonii" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: green;" text="Check Warranty" textFill="#038000">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#buttoniii" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: green;" text="Balance" textFill="#038000">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#buttonis" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: white; -fx-underline: true; -fx-background-radius: 10px; -fx-border-color: green;" text="About Us" textFill="#038000">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+       </VBox>
+   </left>
+   <center>
+       <AnchorPane fx:id="ap" minHeight="363.0" minWidth="650.0" prefHeight="363.0" prefWidth="650.0" BorderPane.alignment="CENTER_RIGHT">
+         <Polyline fill="CHARTREUSE" layoutX="490.0" layoutY="171.0" opacity="0.22" points="-409.0, 182.0, 187.0, -143.0, 275.0, 31.0, 177.0, -122.0" stroke="#06b22b" strokeType="INSIDE" style="-fx-fill: green;" />
+           <Label layoutX="142.0" layoutY="80.0" text="Product Name" textFill="#05a40d">
+              <font>
+                  <Font name="System Bold Italic" size="13.0" />
+              </font>
+           </Label>
+           <Label layoutX="127.0" layoutY="115.0" text="Coustomer Name" textFill="#05a40d">
+              <font>
+                  <Font name="System Bold Italic" size="13.0" />
+              </font>
+           </Label>
+           <Label layoutX="110.0" layoutY="148.0" text="Warranty Start Date" textFill="#05a40d">
+              <font>
+                  <Font name="System Bold Italic" size="13.0" />
+              </font>
+           </Label>
+           <Label layoutX="132.0" layoutY="183.0" text="Warranty Period" textFill="#05a40d">
+              <font>
+                  <Font name="System Bold Italic" size="13.0" />
+              </font>
+           </Label>
+           <Label layoutX="118.0" layoutY="217.0" text="Warranty End Date" textFill="#05a40d">
+              <font>
+                  <Font name="System Bold Italic" size="13.0" />
+              </font>
+           </Label>
+           <TextField fx:id="t6" layoutX="258.0" layoutY="76.0" prefHeight="25.0" prefWidth="300.0" promptText="Product Name" style="-fx-border-color: green; -fx-background-radius: none; -fx-border-radius: none;" />
+           <TextField fx:id="t7" layoutX="258.0" layoutY="110.0" prefHeight="25.0" prefWidth="299.0" promptText="Coustomer Name" style="-fx-border-radius: none; -fx-background-radius: none; -fx-border-color: green;" />
+           <DatePicker fx:id="t8" layoutX="258.0" layoutY="144.0" onMouseClicked="#fh" onShowing="#fg" prefHeight="25.0" prefWidth="298.0" promptText="Warranty Start date" style="-fx-background-radius: none; -fx-border-color: green; -fx-border-radius: none;" />
+           <TextField fx:id="t9" layoutX="257.0" layoutY="178.0" onAction="#caldate" onMouseClicked="#gg" prefHeight="25.0" prefWidth="299.0" promptText="Warranty Period(Month)" style="-fx-background-radius: none; -fx-border-radius: none; -fx-border-color: green;" />
+           <DatePicker fx:id="t10" layoutX="257.0" layoutY="212.0" prefHeight="25.0" prefWidth="300.0" promptText="Warranty Start date" style="-fx-background-radius: none; -fx-border-radius: none; -fx-border-color: green;" />
+           <Label layoutX="163.0" layoutY="262.0" text="Discription" textFill="#05a40d">
+              <font>
+                  <Font name="System Bold Italic" size="13.0" />
+              </font>
+           </Label>
+           <TextArea fx:id="t11" layoutX="257.0" layoutY="247.0" prefHeight="70.0" prefWidth="302.0" promptText="Additional Description" style="-fx-border-radius: none; -fx-background-radius: none; -fx-border-color: green;" />
+           <Button layoutX="257.0" layoutY="330.0" mnemonicParsing="false" onAction="#add_war" prefHeight="33.0" prefWidth="111.0" style="-fx-border-radius: 15px; -fx-background-radius: 15px; -fx-background-color: #038000;" text="Add Warranty" textFill="WHITE">
+              <font>
+                  <Font name="System Bold Italic" size="12.0" />
+              </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+           </Button>
+           <Button layoutX="449.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#clear_i" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: #038000; -fx-text-fill: #ffffff; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Clear" textFill="WHITE">
+              <font>
+                  <Font name="System Bold Italic" size="12.0" />
+              </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+           </Button>
+           <Label fx:id="lb1" layoutX="569.0" layoutY="81.0" textFill="RED">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+           <Label fx:id="lb4" layoutX="567.0" layoutY="179.0" textFill="RED">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+           <Label fx:id="lb2" layoutX="568.0" layoutY="115.0" textFill="RED">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+         <Pane layoutX="1072.0" prefHeight="476.0" prefWidth="105.0" style="-fx-background-color: green;" />
+         <Polyline fill="CHARTREUSE" layoutX="632.0" layoutY="275.0" opacity="0.22" points="-409.0, 182.0, 187.0, -143.0, 275.0, 31.0, 177.0, -122.0" rotate="180.0" stroke="#06b22b" strokeType="INSIDE" style="-fx-fill: green;" />
+       </AnchorPane>
+   </center>
+</BorderPane>

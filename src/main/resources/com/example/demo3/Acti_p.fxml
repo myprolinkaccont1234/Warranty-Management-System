@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="act" maxHeight="150.0" maxWidth="457.0" minHeight="150.0" minWidth="457.0" onMouseClicked="#active_r" prefHeight="150.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ActiP">
+   <children>
+      <Pane layoutX="397.0" prefHeight="150.0" prefWidth="60.0" style="-fx-background-color: green;" />
+      <Label layoutX="32.0" layoutY="19.0" prefHeight="17.0" prefWidth="123.0" style="-fx-underline: true;" text="Activation Details" textFill="#00a811">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="115.0" prefHeight="19.0" prefWidth="148.0" text="Thank You..!" textFill="#02ae04">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="51.0" prefHeight="19.0" prefWidth="289.0" text="You are susessfully activated this product" textFill="#00ab03">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Polyline fill="#24cd11" layoutX="155.0" layoutY="91.0" opacity="0.22" points="-7.0, 36.0, 184.0, -64.0, -13.0, 45.0, -49.5, -13.5" stroke="#24cd11" strokeType="INSIDE" />
+      <Polyline fill="#24cd11" layoutX="88.0" layoutY="75.0" opacity="0.22" points="-7.0, 36.0, 184.0, -64.0, -13.0, 45.0, -49.5, -13.5" rotate="180.0" stroke="#24cd11" strokeType="INSIDE" />
+      <Text fill="#2b9e22" layoutX="33.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have Remaining :" />
+      <Text fx:id="days" layoutX="154.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#00c303" layoutX="188.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Days" />
+      <Text fill="#00ae0c" layoutX="234.0" layoutY="86.0" onMouseClicked="#active_r" strokeType="OUTSIDE" strokeWidth="0.0" text="Activation key" wrappingWidth="131.13671875">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="Akey" fill="#00ae20" layoutX="234.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="148.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
